@@ -1,0 +1,17 @@
+<div>   
+    <div class="box">
+    <br><h1>CALCULADORA ANGULAR</h1>
+    <form class="entradas"> 
+        <input type="number" name="num1" [(ngModel)]="num1" class="input">
+        <input type="number" name="num2" [(ngModel)]="num2" class="input"><br><br>
+   
+
+        <button (click)="somar()" class="button">+</button>
+        <button (click)="subtrair()" class="button">-</button><br><br>
+        <button (click)="dividir()" class="button">/</button>
+        <button (click)="multiplicar()" class="button">*</button><br><br>
+  
+    </form>
+    <input type="number" [value]="result" class="resultado">
+ 
+</div>
